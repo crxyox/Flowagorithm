@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgosse92"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 01:14:50 PM"/>
+        <attribute name="created" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0xODswMTowNTowMiBQTTsyNzEy"/>
+        <attribute name="edited" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0xODswMToxNDo1MCBQTTsxOzI4MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number1" type="Integer" array="False" size=""/>
+            <declare name="number2" type="Integer" array="False" size=""/>
+            <declare name="displaynumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter the first (smaller) number&quot;" newline="True"/>
+            <input variable="number1"/>
+            <output expression="&quot;please enter number 2&quot;" newline="True"/>
+            <input variable="number2"/>
+            <assign variable="displaynumber" expression="(number1 - 1) * number1 / 2 - number2 * (number2 + 1) / 2"/>
+            <output expression="&quot;the sum of all numbers between the first and second numbers are&quot; &amp; displaynumber" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
