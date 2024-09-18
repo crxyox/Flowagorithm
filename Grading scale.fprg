@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgosse92"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-16 01:49:41 PM"/>
+        <attribute name="created" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0xNjswMTozOToyNyBQTTsyNzI0"/>
+        <attribute name="edited" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0xNjswMTo0OTo0MSBQTTsxOzI4Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="grade" type="Real" array="False" size=""/>
+            <declare name="letter" type="String" array="False" size=""/>
+            <output expression="&quot;enter the percentage&quot;" newline="True"/>
+            <input variable="grade"/>
+            <if expression="grade &gt;= 90">
+                <then>
+                    <assign variable="letter" expression="&quot;A&quot;"/>
+                </then>
+                <else>
+                    <if expression="grade &gt;= 80">
+                        <then>
+                            <assign variable="letter" expression="&quot;B&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="grade &gt;= 70">
+                                <then>
+                                    <assign variable="letter" expression="&quot;C&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="grade &gt;= 60">
+                                        <then>
+                                            <assign variable="letter" expression="&quot;D&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="letter" expression="&quot;F&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Your grade is...&quot; &amp;letter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

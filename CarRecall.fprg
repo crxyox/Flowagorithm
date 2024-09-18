@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgosse92"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 01:00:27 PM"/>
+        <attribute name="created" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0xNzswMTozMzo1NCBQTTsyNzE5"/>
+        <attribute name="edited" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0xODswMTowMDoyNyBQTTsxOzI4MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="modelnumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the model number of your car&quot;" newline="True"/>
+            <input variable="modelnumber"/>
+            <if expression="modelnumber = &#9;119">
+                <then>
+                    <output expression="&quot;your car is defective&quot;" newline="True"/>
+                    <breakpoint/>
+                </then>
+                <else>
+                    <if expression="modelnumber = 179">
+                        <then>
+                            <output expression="&quot;your car is defective&quot;" newline="True"/>
+                            <breakpoint/>
+                        </then>
+                        <else>
+                            <if expression="modelnumber = 189">
+                                <then>
+                                    <output expression="&quot;your car is defective&quot;" newline="True"/>
+                                    <breakpoint/>
+                                </then>
+                                <else>
+                                    <if expression="modelnumber = 190">
+                                        <then>
+                                            <output expression="&quot;your car is defective&quot;" newline="True"/>
+                                            <breakpoint/>
+                                        </then>
+                                        <else>
+                                            <if expression="modelnumber = 191">
+                                                <then>
+                                                    <output expression="&quot;your car is defective&quot;" newline="True"/>
+                                                    <breakpoint/>
+                                                </then>
+                                                <else>
+                                                    <if expression="modelnumber = 192">
+                                                        <then>
+                                                            <output expression="&quot;your car is defective&quot;" newline="True"/>
+                                                            <breakpoint/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="modelnumber = 193">
+                                                                <then>
+                                                                    <output expression="&quot;your car is defective&quot;" newline="True"/>
+                                                                    <breakpoint/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="modelnumber = 194">
+                                                                        <then>
+                                                                            <output expression="&quot;your car is defective&quot;" newline="True"/>
+                                                                            <breakpoint/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="modelnumber = 195">
+                                                                                <then>
+                                                                                    <output expression="&quot;your car is defective&quot;" newline="True"/>
+                                                                                    <breakpoint/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="modelnumber = 221">
+                                                                                        <then>
+                                                                                            <output expression="&quot;your car is defective&quot;" newline="True"/>
+                                                                                            <breakpoint/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="modelnumber = 780">
+                                                                                                <then>
+                                                                                                    <output expression="&quot;your car is defective&quot;" newline="True"/>
+                                                                                                    <breakpoint/>
+                                                                                                </then>
+                                                                                                <else/>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;your car is a-ok&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

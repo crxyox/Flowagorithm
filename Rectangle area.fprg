@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgosse92"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 01:29:45 PM"/>
+        <attribute name="created" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0xNzswMToyNjo0MCBQTTsyNzE2"/>
+        <attribute name="edited" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0xNzswMToyOTo0NSBQTTsxOzI4MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="length" type="Integer" array="False" size=""/>
+            <declare name="width" type="Integer" array="False" size=""/>
+            <declare name="area" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the length of the rectangle&quot;" newline="True"/>
+            <input variable="length"/>
+            <output expression="&quot;please enter the width of the rectangle&quot;" newline="True"/>
+            <input variable="width"/>
+            <assign variable="area" expression="length * width"/>
+            <output expression="&quot;the area of your rectangle is&quot;    &amp; area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
