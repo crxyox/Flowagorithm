@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgosse92"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 12:57:51 PM"/>
+        <attribute name="created" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0yNDsxMjo1NDowOSBQTTsyNzIy"/>
+        <attribute name="edited" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0yNDsxMjo1Nzo1MSBQTTsxOzI4MzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="height" type="Integer" array="False" size=""/>
+            <declare name="time" type="Integer" array="False" size=""/>
+            <output expression="&quot;Pleas enter a time less than 4.5 seconds&quot;" newline="True"/>
+            <input variable="time"/>
+            <assign variable="height" expression="100 - 4.9 * (time * 2)"/>
+            <output expression="height" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
