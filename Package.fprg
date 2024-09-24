@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgosse92"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 01:14:35 PM"/>
+        <attribute name="created" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0yNDswMTowNToyOSBQTTsyNzE4"/>
+        <attribute name="edited" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0yNDswMToxNDozNSBQTTsxOzI4MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="weight" type="Integer" array="False" size=""/>
+            <declare name="length" type="Integer" array="False" size=""/>
+            <declare name="width" type="Integer" array="False" size=""/>
+            <declare name="height" type="Integer" array="False" size=""/>
+            <declare name="size" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter the weight of your package&quot;" newline="True"/>
+            <input variable="weight"/>
+            <output expression="&quot;please enter the length of your package&quot;" newline="True"/>
+            <input variable="length"/>
+            <output expression="&quot;please enter the width of your package&quot;" newline="True"/>
+            <input variable="width"/>
+            <output expression="&quot;please enter the height of your package&quot;" newline="True"/>
+            <input variable="height"/>
+            <assign variable="size" expression="length * width * height"/>
+            <if expression="weight &gt; 27">
+                <then>
+                    <if expression="size &gt; 100000">
+                        <then>
+                            <output expression="&quot;To heavy and to large&quot;" newline="True"/>
+                            <breakpoint/>
+                        </then>
+                        <else>
+                            <output expression="&quot;To heavy&quot;" newline="True"/>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="size &gt; 100000">
+                        <then>
+                            <output expression="&quot;to large&quot;" newline="True"/>
+                            <breakpoint/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Your package is good to go!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
