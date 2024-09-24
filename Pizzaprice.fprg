@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgosse92"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 01:04:01 PM"/>
+        <attribute name="created" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0yNDsxMjo1OTowNCBQTTsyNzIy"/>
+        <attribute name="edited" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0yNDswMTowNDowMSBQTTsxOzI4MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="size" type="Integer" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <output expression="&quot;please enter the diameter of your pizza in inches&quot;" newline="True"/>
+            <input variable="size"/>
+            <assign variable="price" expression="(0.05 * size * size)"/>
+            <assign variable="price" expression="price + 1.75"/>
+            <output expression="price" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
