@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgosse92"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 01:34:24 PM"/>
+        <attribute name="created" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0yNDswMToxNDo1OCBQTTsyNzIw"/>
+        <attribute name="edited" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0yNDswMTozNDoyNCBQTTsxOzI4MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="input" type="String" array="False" size=""/>
+            <output expression="&quot;Please enter your lowercase letter&quot;" newline="True"/>
+            <input variable="input"/>
+            <if expression="input= &quot;a&quot; OR input= &quot;b&quot; OR input= &quot;c&quot;">
+                <then>
+                    <output expression="&quot;Your input corresponds to the number 2 on the telephone&quot;" newline="True"/>
+                    <breakpoint/>
+                </then>
+                <else>
+                    <if expression="input = &quot;d&quot; OR input = &quot;e&quot; Or input = &quot;f&quot;">
+                        <then>
+                            <output expression="&quot;Your input corresponds to the number 3 on the telephone&quot;" newline="True"/>
+                            <breakpoint/>
+                        </then>
+                        <else>
+                            <if expression="input = &quot;g&quot; OR input = &quot;h&quot; OR input = &quot;i&quot;">
+                                <then>
+                                    <output expression="&quot;Your input corresponds to the number 4 on the telephone&quot;" newline="True"/>
+                                    <breakpoint/>
+                                </then>
+                                <else>
+                                    <if expression="input = &quot;j&quot; OR input = &quot;k&quot; OR input = &quot;l&quot;">
+                                        <then>
+                                            <output expression="&quot;Your input corresponds to the number 5 on the telephone&quot;" newline="True"/>
+                                            <breakpoint/>
+                                        </then>
+                                        <else>
+                                            <if expression="input = &quot;m&quot; OR input = &quot;n&quot; OR input = &quot;o&quot;">
+                                                <then>
+                                                    <output expression="&quot;Your input corresponds to the number 6 on the telephone&quot;" newline="True"/>
+                                                    <breakpoint/>
+                                                </then>
+                                                <else>
+                                                    <if expression="input = &quot;p&quot; OR input = &quot;q&quot; OR input = &quot;r&quot; OR input = &quot;s&quot;">
+                                                        <then>
+                                                            <output expression="&quot;Your input corresponds to the number 7 on the telephone&quot;" newline="True"/>
+                                                            <breakpoint/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="input = &quot;v&quot; OR input = &quot;t&quot; OR input = &quot;u&quot;">
+                                                                <then>
+                                                                    <output expression="&quot;Your input corresponds to the number 8 on the telephone&quot;" newline="True"/>
+                                                                    <breakpoint/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="input = &quot;w&quot; OR input = &quot;x&quot; OR input = &quot;y&quot; OR input = &quot;z&quot;">
+                                                                        <then>
+                                                                            <output expression="&quot;Your input corresponds to the number 9 on the telephone&quot;" newline="True"/>
+                                                                            <breakpoint/>
+                                                                        </then>
+                                                                        <else/>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;your entry is invalid&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
