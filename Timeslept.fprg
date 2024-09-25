@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgosse92"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 01:16:23 PM"/>
+        <attribute name="created" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0yNTsxMjo1MTowMSBQTTsyNzEy"/>
+        <attribute name="edited" value="bWdvc3NlOTI7Q0hTQ1MtNDM1MjI7MjAyNC0wOS0yNTswMToxNjoyMyBQTTsxOzI4MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <declare name="month" type="Integer" array="False" size=""/>
+            <declare name="day" type="Integer" array="False" size=""/>
+            <declare name="today" type="Integer" array="False" size=""/>
+            <declare name="tomonth" type="Integer" array="False" size=""/>
+            <declare name="toyear" type="Integer" array="False" size=""/>
+            <declare name="yearx" type="Integer" array="False" size=""/>
+            <declare name="dayx" type="Integer" array="False" size=""/>
+            <declare name="monthx" type="Integer" array="False" size=""/>
+            <declare name="monthsleep" type="Integer" array="False" size=""/>
+            <declare name="display" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter the year you were born&quot;" newline="False"/>
+            <input variable="year"/>
+            <output expression="&quot;please enter the month you were born&quot;" newline="False"/>
+            <input variable="month"/>
+            <output expression="&quot;please enter the day you were born&quot;" newline="False"/>
+            <input variable="day"/>
+            <output expression="&quot;please enter the year it is right now&quot;" newline="True"/>
+            <input variable="toyear"/>
+            <output expression="&quot;please enter the month it is right now&quot;" newline="True"/>
+            <input variable="tomonth"/>
+            <output expression="&quot;please enter the day it is right now&quot;" newline="True"/>
+            <input variable="today"/>
+            <assign variable="monthsleep" expression="240"/>
+            <declare name="yearsleep" type="Integer" array="False" size=""/>
+            <assign variable="yearsleep" expression="2920"/>
+            <assign variable="yearx" expression="toyear - year"/>
+            <assign variable="monthx" expression="tomonth - month"/>
+            <assign variable="dayx" expression="today - day"/>
+            <assign variable="yearx" expression="yearx * yearsleep"/>
+            <assign variable="dayx" expression="dayx * 8"/>
+            <assign variable="monthx" expression="monthx * monthsleep"/>
+            <assign variable="display" expression="yearx + monthx + dayx"/>
+            <output expression="&quot;you have slept for&quot; &amp; display &amp; &quot;hours&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

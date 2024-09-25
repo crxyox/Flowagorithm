@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fmason22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 01:06:23 PM"/>
+        <attribute name="created" value="Zm1hc29uMjI7Q0hTQ1MtNDM1Mjc7MjAyNC0wOS0xNjswMTo1NDo0OCBQTTsyNzEy"/>
+        <attribute name="edited" value="Zm1hc29uMjI7Q0hTQ1MtNDM1Mjc7MjAyNC0wOS0xODswMTowNjoyMyBQTTszOzI4MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Minutes" type="Real" array="False" size=""/>
+            <declare name="Seconds" type="Real" array="False" size=""/>
+            <declare name="Time" type="String" array="False" size=""/>
+            <output expression="&quot;How many minutes since midnight? &quot;" newline="True"/>
+            <input variable="Minutes"/>
+            <assign variable="Seconds" expression="Minutes*60"/>
+            <assign variable="Time" expression="(((Seconds/3600)-(((Seconds/3600)%1)))%12)&amp;&quot;&quot;"/>
+            <if expression="((Seconds/60)-(((Seconds/60)%1))%60)&lt;10">
+                <then>
+                    <assign variable="Time" expression="Time&amp;&quot;:0&quot;&amp;(((Seconds/60)-((Seconds/60)%1))%60)"/>
+                </then>
+                <else>
+                    <assign variable="Time" expression="Time &amp;&quot;:&quot;&amp;(((Seconds/60)-((Seconds/60)%1))%60)"/>
+                </else>
+            </if>
+            <if expression="((Seconds-((Seconds)%1))%60)&lt;10">
+                <then>
+                    <assign variable="Time" expression="Time&amp;&quot;:0&quot;&amp;(((Seconds)-((Seconds)%1))%60)"/>
+                </then>
+                <else>
+                    <assign variable="Time" expression="Time &amp;&quot;:&quot;&amp;(((Seconds)-((Seconds)%1))%60)"/>
+                </else>
+            </if>
+            <output expression="&quot;The time is &quot;&amp;Time" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
